@@ -1,0 +1,28 @@
+<ion-content class="login_register" padding text-center>
+    <div class="logo">
+      <img class="logo_img" src="assets/images/logo.png">
+      <p no-margin>Please login to continue</p>
+    </div>
+    <div class="login_form">
+      <form [formGroup]="loginform">
+        <ion-list  no-margin>
+
+          <ion-item no-lines no-padding>
+            <ion-input class="input_black" type="email" placeholder="Email address" value="" no-margin formControlName="email"></ion-input>
+          </ion-item>
+
+          <ion-item no-lines no-padding>
+            <ion-input class="input_black" type="password" placeholder="Password" no-margin formControlName="password"></ion-input>
+            <span (click)="forgotPassword()" item-end>forget</span>
+          </ion-item>
+
+        </ion-list>
+        <!--<button  [navPush]="'TabsPage'" color="primary" ion-button block round>Login</button>-->
+        <button  (click)="login()" color="primary" ion-button block round>Login</button>
+      </form>
+    </div>
+    <div class="create_account">
+      <p text-uppercase>Don't have account?</p>
+      <button  [navPush]="'RegisterPage'"  class="btn_signup" text-uppercase ion-button clear>Sign up</button>
+    </div>
+</ion-content>

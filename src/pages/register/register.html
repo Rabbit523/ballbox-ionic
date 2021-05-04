@@ -1,0 +1,31 @@
+<ion-content class="login_register" padding text-center>
+    <div class="login_form">
+      <form [formGroup]="signupform">
+        <ion-list  no-margin>
+
+          <ion-item no-lines no-padding>
+            <ion-input class="input_black" type="text" placeholder="First name" value="" no-margin formControlName="firstname"></ion-input>
+          </ion-item>
+
+          <ion-item no-lines no-padding>
+            <ion-input class="input_black" type="text" placeholder="Last name" no-margin formControlName="lastname"></ion-input>
+          </ion-item>
+          
+          <ion-item no-lines no-padding>
+            <ion-input class="input_black" type="email" placeholder="Email address" value="" no-margin formControlName="email"></ion-input>
+          </ion-item>
+
+          <ion-item no-lines no-padding>
+            <ion-input class="input_black" type="password" placeholder="Password" no-margin formControlName="password"></ion-input>
+          </ion-item>
+
+        </ion-list>
+        <!--<button  [navPush]="'TabsPage'" color="primary" ion-button block round>Sign up</button> -->
+        <button  (click)="signup()" color="primary" ion-button block round>Sign up</button>
+      </form>
+    </div>
+    <div class="create_account">
+      <button [navPush]="'LoginPage'" class="btn_back" text-uppercase ion-button clear>Back</button>
+    </div>
+</ion-content>
+

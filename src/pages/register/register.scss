@@ -1,0 +1,18 @@
+page-register {
+    .login_register{
+        background-color: black;
+        .login_form{
+            .input_black{
+                color: white;
+            }
+            min-height: calc(100% - 50px);
+        }
+        .create_account{
+            .btn_back{
+                color:color($colors,light);
+            }
+        }
+        
+        
+    }
+}

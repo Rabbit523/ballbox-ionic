@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "default": "ballbox-web",
+    "staging": "ballbox-admin",
+    "ballboxweb": "ballbox-admin"
+  },
+  "targets": {
+    "ballbox-admin": {
+      "hosting": {
+        "ballbox-admin": [
+          "ballbox-admin"
+        ],
+        "ballbox-web-ionic": [
+          "ballbox-web-ionic"
+        ]
+      }
+    }
+  }
+}
